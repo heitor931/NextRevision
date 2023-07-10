@@ -2,12 +2,13 @@ import Link from "next/link";
 
 function Header() {
     return (
-        <header className="bg-blue-950 h-12 py-8 text-white flex flex-col items-center justify-center">
+        <header className="bg-blue-950  text-white flex flex-col items-center justify-center">
             <h1 className="text-3xl text-green-700 font-bold" >Heitor company</h1>
-        <ul className="flex gap-2">
-          <Link href="/">Home</Link>
-          <Link href="/about" >About</Link>
-          <Link href="about/team"></Link>
+        <ul className="flex gap-4 p-4 ">
+          <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/">Home</Link>
+          <Link className="hover:bg-slate-600 p-1 hover:rounded-md " href="/about" >About</Link>
+          <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/about/team">Our team</Link>
+          <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/code/repos">Code repos</Link>
         </ul>
       </header>
     );
