@@ -2,13 +2,13 @@ import CodeRepo, { ICode } from "@/app/components/CodeRepo";
 
 async function getRepos() {
     const response = await fetch("https://api.github.com/users/heitor931/repos")
+    await new Promise((resolve) => setTimeout(resolve, 2000))
     const repos = response.json()
     return repos
 }
 
 async function Code() {
     const repos = await getRepos()
-    console.log(repos);
     
     return (
         <section>
