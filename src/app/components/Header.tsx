@@ -9,6 +9,7 @@ function Header() {
           <Link className="hover:bg-slate-600 p-1 hover:rounded-md " href="/about" >About</Link>
           <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/about/team">Our team</Link>
           <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/code/repos">Code repos</Link>
+          <Link className="hover:bg-slate-600 p-1 hover:rounded-md" href="/tailwind">Tailwind</Link>
         </ul>
       </header>
     );

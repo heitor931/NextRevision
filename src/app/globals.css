@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .heitor {
+        background-color: theme("colors.sky.800");
+        color: theme("colors.red.700");
+        padding: theme("spacing.10");
+    }
+}
